@@ -8,6 +8,7 @@
   "dependencies": {
     "@animated-burgers/burger": "^1.1.0"
   },
+  "homepage": "http://march08.github.io/animated-burgers",
   "publishConfig": {
     "access": "public"
   }
