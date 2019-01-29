@@ -1,11 +1,11 @@
 {
   "name": "@animated-burgers/burger-slide",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "author": "Roman Nguyen march08@outlook.com",
   "license": "MIT",
   "dependencies": {
-    "@animated-burgers/burger": "1.0.0"
+    "@animated-burgers/burger": "^0.1.0"
   }
 }
