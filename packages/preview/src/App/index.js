@@ -4,15 +4,20 @@ import * as React from 'react'
 import BContainer from 'components/BContainer'
 import BContainerItem from 'components/BContainerItem'
 
-import BurgerSqueeze from '@css-burgers/burger-squeeze'
-import '@css-burgers/burger-squeeze/styles.scss'
+import BurgerSqueeze from '@animated-burgers/burger-squeeze'
+import '@animated-burgers/burger-squeeze/styles.scss'
 
-import BurgerArrow from '@css-burgers/burger-arrow'
-import '@css-burgers/burger-arrow/styles.scss'
+import BurgerArrow from '@animated-burgers/burger-arrow'
+import '@animated-burgers/burger-arrow/styles.scss'
 
-import BurgerSlide from '@css-burgers/burger-slide'
-import '@css-burgers/burger-slide/styles.scss'
-import './styles.scss'
+import BurgerSlide from '@animated-burgers/burger-slide'
+import '@animated-burgers/burger-slide/styles.scss'
+
+import BurgerSlip from '@animated-burgers/burger-slip'
+import '@animated-burgers/burger-slip/styles.scss'
+
+import BurgerRotate from '@animated-burgers/burger-rotate'
+import '@animated-burgers/burger-rotate/styles.scss'
 
 import Content from 'components/Content'
 import Section from 'components/Section'
@@ -20,10 +25,36 @@ import Section from 'components/Section'
 
 import './App.scss'
 
+const bgs = [
+  '#2c2c54',
+  '#474787',
+  '#34ace0',
+  '#33d9b2',
+  '#ffb142',
+  '#ff793f',
+  '#ff5252',
+  '#b33939',
+]
+
 const burgers = [
   {
+    item: <BurgerSqueeze />,
+    title: 'Squeeze',
+  },
+  {
+    item: <BurgerSlide />,
+    title: 'Slide',
+  },
+  {
+    item: <BurgerSlip />,
+    title: 'Slip',
+  },
+  {
+    item: <BurgerRotate />,
+    title: 'Rotate',
+  },
+  {
     item: <BurgerArrow />,
-    bg: '#ff5252',
     title: 'Arrow',
   },
   {
@@ -31,38 +62,28 @@ const burgers = [
       className="burger-right"
       direction="right"
     />),
-    bg: '#34ace0',
     title: 'Arrow Right',
   },
   {
     item: <BurgerArrow
       className="burger-top"
     />,
-    bg: '#33d9b2',
     title: 'Arrow Top',
   },
   {
     item: <BurgerArrow
       className="burger-bottom"
     />,
-    bg: '#ffb142',
     title: 'Arrow Bottom',
   },
-  {
-    item: <BurgerSqueeze />,
-    bg: '#0066cc',
-    title: 'Squeeze',
-  },
-  {
-    item: <BurgerSlide />,
-    bg: '#0066cc',
-    title: 'Slide',
-  },
-]
+].map((burger, index) => ({
+  ...burger,
+  bg: bgs[index],
+}))
 
 const App = () => (
   <div className="app">
-    <Section>
+    <Section className="hero">
       <Content>
         <h1>Animated CSS burger components</h1>
         <p>Available as plain html/css or as React components.</p>
@@ -78,6 +99,7 @@ const App = () => (
             } }
           >
             {item}
+            <span className="item-title">{title}</span>
           </BContainerItem>
         ))
       }

@@ -1,1 +1,57 @@
-@import '~@css-burgers/burger/styles.scss';
+@import '~@animated-burgers/burger/styles.scss';
+@keyframes burgerAnimationSlide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  49% {
+    transform: translateX(-0.7em);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0.7em);
+    opacity: 0;
+  }
+  51% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.burger.burger-slide {
+  .burger-lines {
+    transition: .1s all .15s;
+    &:after,
+    &:before {
+      width: 2em;
+      transition: .1s all .15s;
+    }
+  }
+  .burger-lines:after {
+    left: 0;
+    top: -1em;
+  }
+  .burger-lines:before {
+    left: 1em;
+    top: 1em;
+  }
+  &:not(.open) {
+    animation-name: burgerAnimationSlide;
+    animation-duration: 0.4s;
+    background-color: transparent;
+  }
+  &.open {
+    .burger-lines {
+      
+    }
+  }
+}

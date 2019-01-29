@@ -2,7 +2,7 @@
 0 silly argv   lernaVersion: '3.10.7',
 0 silly argv   '$0': 'node_modules/.bin/lerna' }
 1 notice cli v3.10.7
-2 verbose rootPath /Users/rn/repo/css-burgers
+2 verbose rootPath /Users/rn/repo/animated-burgers
 3 error JSONError: Unexpected token } in JSON at position 278 while parsing near '...burger": "1.0.0",  }}' in packages/BurgerArrow/package.json
-3 error     at module.exports (/Users/rn/repo/css-burgers/node_modules/parse-json/index.js:26:19)
-3 error     at parse (/Users/rn/repo/css-burgers/node_modules/load-json-file/index.js:8:29)
+3 error     at module.exports (/Users/rn/repo/animated-burgers/node_modules/parse-json/index.js:26:19)
+3 error     at parse (/Users/rn/repo/animated-burgers/node_modules/load-json-file/index.js:8:29)

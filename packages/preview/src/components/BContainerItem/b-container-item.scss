@@ -1,9 +1,16 @@
 .b-container-item {
-  flex-grow: 1;
-  padding: 150px;
+  padding: 100px;
   text-align: center;
   .b-container-item-inner {
     display: flex;
     justify-content: center;
+    padding-top: 100%;
+    position: relative;
+    &>* {
+      position: absolute;
+      top: calc(50% - 1em);
+    }
   }
+  flex-basis: 25%;
+  flex-shrink: 0;
 }

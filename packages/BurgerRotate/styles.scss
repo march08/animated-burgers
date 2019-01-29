@@ -1,14 +1,14 @@
 @import '~@animated-burgers/burger/styles.scss';
-.burger.burger-squeeze {
+.burger.burger-rotate {
   .burger-lines {
-    &,
-    &:after,
-    &:before {
-      transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s;
-    }
     &:after,
     &:before {
       width: 2em;
+    }
+    &,
+    &:after,
+    &:before {
+      transition: all .2s;
     }
   }
   .burger-lines:after {
@@ -20,12 +20,8 @@
     top: 1em;
   }
   &.open {
+    transform: rotate(180deg);
     .burger-lines {
-      &,
-      &:after,
-      &:before {
-        transition: .2s background-color, .2s top, .2s left, .2s transform .15s;
-      }
       & {
         background-color: transparent;
       }
@@ -35,10 +31,10 @@
         top: 0px;
       }
       &:before {
-        transform: rotate(-45deg);
+        transform: rotate(135deg);
       }
       &:after {
-        transform: rotate(45deg);
+        transform: rotate(-135deg);
       }
     }
   }

@@ -5,7 +5,7 @@
     "start": "react-scripts start ./packages/preview",
     "build": "react-scripts build",
     "deploy": "gh-pages -d packages/preview/build",
-    "clean-dist": "rimraf ./dist",
+    "clean-dist": "rm -rf `find -type d -name dist`",
     "dist": "yarn clean-dist; NODE_ENV=production ./node_modules/.bin/webpack --config ./packages/dist.babel.js"
   },
   "devDependencies": {

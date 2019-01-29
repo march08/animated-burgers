@@ -75,40 +75,36 @@
       left: 1em;
       top: 1em; }
 
-.burger.burger-squeeze .burger-lines, .burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {
-  -webkit-transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s;
-  -o-transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s;
-  transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s; }
-
-.burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {
+.burger.burger-rotate .burger-lines:after, .burger.burger-rotate .burger-lines:before {
   width: 2em; }
 
-.burger.burger-squeeze .burger-lines:after {
+.burger.burger-rotate .burger-lines, .burger.burger-rotate .burger-lines:after, .burger.burger-rotate .burger-lines:before {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+
+.burger.burger-rotate .burger-lines:after {
   left: 0;
   top: -1em; }
 
-.burger.burger-squeeze .burger-lines:before {
+.burger.burger-rotate .burger-lines:before {
   left: 1em;
   top: 1em; }
 
-.burger.burger-squeeze.open .burger-lines, .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {
-  -webkit-transition: .2s background-color, .2s top, .2s left, .2s transform .15s;
-  -o-transition: .2s background-color, .2s top, .2s left, .2s transform .15s;
-  transition: .2s background-color, .2s top, .2s left, .2s transform .15s; }
-
-.burger.burger-squeeze.open .burger-lines {
-  background-color: transparent; }
-
-.burger.burger-squeeze.open .burger-lines:before, .burger.burger-squeeze.open .burger-lines:after {
-  left: 0.5em;
-  top: 0px; }
-
-.burger.burger-squeeze.open .burger-lines:before {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-
-.burger.burger-squeeze.open .burger-lines:after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+.burger.burger-rotate.open {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .burger.burger-rotate.open .burger-lines {
+    background-color: transparent; }
+  .burger.burger-rotate.open .burger-lines:before, .burger.burger-rotate.open .burger-lines:after {
+    left: 0.5em;
+    top: 0px; }
+  .burger.burger-rotate.open .burger-lines:before {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg); }
+  .burger.burger-rotate.open .burger-lines:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg); }

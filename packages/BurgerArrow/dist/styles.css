@@ -11,10 +11,10 @@
     content: '';
     display: block;
     position: absolute;
-    height: 200%;
-    width: 200%;
-    top: -50%;
-    left: -50%; }
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%; }
   .burger .burger-lines {
     top: 50%;
     margin-top: -0.125em; }
@@ -30,6 +30,12 @@
       -webkit-transform: rotate(0);
           -ms-transform: rotate(0);
               transform: rotate(0); }
+    .burger .burger-lines .burger-lines:after {
+      left: 0;
+      top: -1em; }
+    .burger .burger-lines .burger-lines:before {
+      left: 1em;
+      top: 1em; }
 .burger {
   height: 3em;
   width: 3em;
@@ -43,10 +49,10 @@
     content: '';
     display: block;
     position: absolute;
-    height: 200%;
-    width: 200%;
-    top: -50%;
-    left: -50%; }
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%; }
   .burger .burger-lines {
     top: 50%;
     margin-top: -0.125em; }
@@ -62,6 +68,12 @@
       -webkit-transform: rotate(0);
           -ms-transform: rotate(0);
               transform: rotate(0); }
+    .burger .burger-lines .burger-lines:after {
+      left: 0;
+      top: -1em; }
+    .burger .burger-lines .burger-lines:before {
+      left: 1em;
+      top: 1em; }
 
 .burger.burger-arrow .burger-lines, .burger.burger-arrow .burger-lines:after, .burger.burger-arrow .burger-lines:before {
   -webkit-transition: .2s top, .2s left, .2s transform, .4s background-color .2s;
@@ -70,14 +82,6 @@
 
 .burger.burger-arrow .burger-lines:after, .burger.burger-arrow .burger-lines:before {
   width: 2em; }
-
-.burger.burger-arrow .burger-lines:after {
-  left: 0;
-  top: -1em; }
-
-.burger.burger-arrow .burger-lines:before {
-  left: 1em;
-  top: 1em; }
 
 .burger.burger-arrow.open.burger-bottom {
   -webkit-transform: rotate(-90deg);

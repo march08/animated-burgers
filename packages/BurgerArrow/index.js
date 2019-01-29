@@ -1,4 +1,4 @@
 import './styles.scss'
-import { createBurger } from '@css-burgers/burger'
+import { createBurger } from '@animated-burgers/burger'
 
 export default createBurger('burger-arrow')

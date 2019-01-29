@@ -1,4 +1,4 @@
-@import '~@css-burgers/burger/styles.scss';
+@import '~@animated-burgers/burger/styles.scss';
 .burger.burger-arrow {
   .burger-lines {
     &,
@@ -10,14 +10,6 @@
     &:before {
       width: 2em;
     }
-  }
-  .burger-lines:after {
-    left: 0;
-    top: -1em;
-  }
-  .burger-lines:before {
-    left: 1em;
-    top: 1em;
   }
   &.open.burger-bottom {
     transform: rotate(-90deg);

@@ -5,6 +5,8 @@ const components = [
   'BurgerSqueeze',
   'BurgerArrow',
   'BurgerSlide',
+  'BurgerSlip',
+  'BurgerRotate',
 ]
 
 const entry = components.reduce((ac, item) => ({
