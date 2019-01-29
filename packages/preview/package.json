@@ -1,13 +1,13 @@
 {
   "name": "@animated-burgers/preview",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "dependencies": {
-    "@animated-burgers/burger": "^0.1.0",
-    "@animated-burgers/burger-arrow": "^0.1.0",
-    "@animated-burgers/burger-rotate": "^0.1.0",
-    "@animated-burgers/burger-slide": "^0.1.0",
-    "@animated-burgers/burger-slip": "^0.1.0",
-    "@animated-burgers/burger-squeeze": "^0.1.0",
+    "@animated-burgers/burger": "^1.0.0",
+    "@animated-burgers/burger-arrow": "^1.0.0",
+    "@animated-burgers/burger-rotate": "^1.0.0",
+    "@animated-burgers/burger-slide": "^1.0.0",
+    "@animated-burgers/burger-slip": "^1.0.0",
+    "@animated-burgers/burger-squeeze": "^1.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.3"
