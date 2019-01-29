@@ -4,5 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "author": "Roman Nguyen march08@outlook.com",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
