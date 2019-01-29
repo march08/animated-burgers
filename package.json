@@ -2,6 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "start": "react-scripts start ./packages/preview",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d packages/preview/build",
     "clean-dist": "rimraf ./dist",
     "dist": "yarn clean-dist; NODE_ENV=production ./node_modules/.bin/webpack --config ./packages/dist.babel.js"
@@ -13,6 +15,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/traverse": "^7.2.3",
     "autoprefixer": "^9.4.7",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "compression-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.0",
@@ -40,6 +43,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "eslint": "^5.12.1",
     "react": "^16.7.0"
   }
 }

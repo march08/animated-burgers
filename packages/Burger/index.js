@@ -7,11 +7,13 @@ const Burger = ({
   className,
   Component,
   isOpen,
+  direction = 'left',
   ...rest
 }) => (
   <Component
     className={ classnames('burger', className, {
       open: isOpen,
+      [`burger-${direction}`]: direction,
     }) }
     { ...rest }
   >
@@ -23,12 +25,15 @@ Burger.defaultProps = {
   className: null,
   Component: 'div',
   isOpen: false,
+  direction: 'left',
 }
 
 
-export const createBurger = defaultClassName => ({ className, ...rest }) => (
+export const createBurger = defaultClassName => ({ className, direction, ...rest }) => (
   <Burger
-    className={ classnames(defaultClassName, className) }
+    className={ classnames(defaultClassName, className, {
+      [`burger-${direction}`]: direction,
+    }) }
     { ...rest }
   />
 )

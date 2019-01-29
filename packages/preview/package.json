@@ -8,6 +8,7 @@
     "react-scripts": "2.1.3",
     "@css-burgers/burger": "1.0.0",
     "@css-burgers/burger-squeeze": "1.0.0",
+    "@css-burgers/burger-slide": "1.0.0",
     "@css-burgers/burger-arrow": "1.0.0"
   },
   "scripts": {

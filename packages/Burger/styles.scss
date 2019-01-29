@@ -30,5 +30,13 @@
       position: absolute;
       transform: rotate(0);
     }
+    .burger-lines:after {
+      left: 0;
+      top: -1em;
+    }
+    .burger-lines:before {
+      left: 1em;
+      top: 1em;
+    }
   }
 }
