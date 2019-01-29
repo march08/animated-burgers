@@ -83,12 +83,20 @@
 .burger.burger-arrow .burger-lines:after, .burger.burger-arrow .burger-lines:before {
   width: 2em; }
 
-.burger.burger-arrow.open.burger-bottom {
+.burger.burger-arrow .burger-lines:after {
+  left: 0;
+  top: -1em; }
+
+.burger.burger-arrow .burger-lines:before {
+  left: 1em;
+  top: 1em; }
+
+.burger.burger-arrow.open.burger-down {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg); }
 
-.burger.burger-arrow.open.burger-top {
+.burger.burger-arrow.open.burger-up {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg); }

@@ -147,3 +147,21 @@
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
   background-color: transparent; }
+
+.burger.burger-slide.open .burger-lines {
+  -webkit-animation-name: burgerAnimationSlide;
+          animation-name: burgerAnimationSlide;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  background-color: transparent; }
+  .burger.burger-slide.open .burger-lines:before, .burger.burger-slide.open .burger-lines:after {
+    left: 0.5em;
+    top: 0px; }
+  .burger.burger-slide.open .burger-lines:before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .burger.burger-slide.open .burger-lines:after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }

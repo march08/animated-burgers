@@ -51,7 +51,20 @@
   }
   &.open {
     .burger-lines {
-      
+      animation-name: burgerAnimationSlide;
+      animation-duration: 0.4s;
+      background-color: transparent;
+      &:before,
+      &:after {
+        left: 0.5em;
+        top: 0px;
+      }
+      &:before {
+        transform: rotate(-45deg);
+      }
+      &:after {
+        transform: rotate(45deg);
+      }
     }
   }
 }

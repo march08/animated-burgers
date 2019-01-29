@@ -13,7 +13,7 @@ $borderDefault: 1px solid $borderColor;
 $borderColorDark: #2E2E33;
 // text
 $textMain: #3E3F42;
-$textBase: #6B6C6F;
+$textBase: rgb(63, 63, 66);
 $textSecondary: #9EA0A5;
 $textLight: #CECFD2;
 // colors
@@ -24,7 +24,7 @@ $violet: #6977FF;
 $red: #E6492D;
 $yellow: #FACF55;
 $success: $green;
-$primary: #21e0ac;
+$primary: $blue;
 $warning: $orange;
 $error: $red;
 // base color pairs

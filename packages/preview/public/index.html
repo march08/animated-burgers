@@ -22,6 +22,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Animated CSS burgers, available as HTML/CSS or React components</title>
+  <meta name="description" content="Collection of animated CSS burgers for React, available as plain HTML/CSS" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
 </head>
 
 <body>
@@ -49,6 +53,18 @@
       });
   });
 </script>
+<script>
+  (function (d) {
+    var config = {
+      kitId: 'yjd1rxh',
+      scriptTimeout: 3000,
+      async: true
+    },
+      h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+  })(document);
+</script>
+
+<script>hljs.initHighlightingOnLoad();</script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </html>

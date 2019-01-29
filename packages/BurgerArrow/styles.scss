@@ -11,10 +11,18 @@
       width: 2em;
     }
   }
-  &.open.burger-bottom {
+  .burger-lines:after {
+    left: 0;
+    top: -1em;
+  }
+  .burger-lines:before {
+    left: 1em;
+    top: 1em;
+  }
+  &.open.burger-down {
     transform: rotate(-90deg);
   }
-  &.open.burger-top {
+  &.open.burger-up {
     transform: rotate(90deg);
   }
   &.burger-right {

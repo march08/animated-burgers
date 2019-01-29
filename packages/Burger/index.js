@@ -7,7 +7,7 @@ const Burger = ({
   className,
   Component,
   isOpen,
-  direction = 'left',
+  direction = null,
   ...rest
 }) => (
   <Component
@@ -25,7 +25,7 @@ Burger.defaultProps = {
   className: null,
   Component: 'div',
   isOpen: false,
-  direction: 'left',
+  direction: null,
 }
 
 
