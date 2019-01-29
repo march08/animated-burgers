@@ -1,0 +1,8 @@
+{
+  "name": "@css-burgers/burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "Roman Nguyen march08@outlook.com",
+  "license": "MIT"
+}

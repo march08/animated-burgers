@@ -1,0 +1,231 @@
+@import "../vars.scss";
+@import "./normalize.css";
+::-webkit-scrollbar-button {
+  display: none;
+  height: 13px;
+  border-radius: 0px;
+  background-color: orange;
+}
+
+::-webkit-scrollbar-button:hover {
+  background-color: orange;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 7px;
+  margin-right: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 1px;
+  border-left: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  height: 100%;
+  overflow: auto;
+  /*padding-top: 100px;*/
+}
+
+body.noscroll {
+  .app {
+    overflow: hidden;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background: $bg;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: $fontFamily;
+  background: $bg;
+  color: $textBase;
+  font-size: 16px;
+  overflow: hidden;
+  font-weight: 400; // font smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  input,
+  button,
+  textarea {
+    color: $textMain;
+    font-size: 16px;
+    font-family: $fontFamily;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    transition: all 0.2s;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 600;
+    color: $textMain;
+  }
+  *+h1,
+  *+h2,
+  *+h3,
+  *+h4,
+  *+h5 {
+    margin-top: 1.125rem;
+  }
+  h1+*,
+  h2+*,
+  h3+*,
+  h4+* {
+    margin-top: 1em;
+  }
+  p {
+    transition: all 0.2s;
+    margin: 0;
+    line-height: 1.375rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $textSecondary;
+  }
+  input,
+  textarea {
+    font-size: .875rem;
+  }
+  *+p {
+    margin-top: 0.3em;
+  }
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  p,
+  ul,
+  ol {
+    &+* {
+      margin-top: 1.125em;
+    }
+  }
+  p+p {
+    margin-top: 0.4em;
+  }
+  a {
+    transition: .2s;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  p,
+  ul {
+    a {
+      display: inline-block;
+      position: relative;
+      transition: all 0.2s;
+      color: $primary;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  strong {
+    font-weight: 500;
+  }
+  ul,
+  ol {
+    line-height: 1.5;
+    color: $textMain;
+    font-size: 0.875rem;
+    *:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  ol {
+    padding-left: 20px;
+  }
+  ul:global(.no-style) {
+    list-style: none;
+    padding-left: 0;
+    ul {
+      padding-left: 20px;
+    }
+  }
+  code:not([class]) {
+    display: inline-block;
+    background: #FBFBFD;
+    border: 1px solid #DADEE7;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #34AA44;
+    line-height: 1.375rem;
+    padding: 4px 12px;
+    font-family: $fontFamily;
+  }
+}
+
+:global #root {
+  height: 100%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $textSecondary;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $textSecondary;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $textSecondary;
+}
+
+form {
+  max-width: 760px;
+}
+
+// some helpers and pregenerated color classes
+@each $name,
+$color in $colorPairs {
+  &:global(.color-#{$name}) {
+    color: $color;
+  }
+}

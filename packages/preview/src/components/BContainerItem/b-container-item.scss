@@ -1,0 +1,9 @@
+.b-container-item {
+  flex-grow: 1;
+  padding: 200px;
+  text-align: center;
+  .b-container-item-inner {
+    display: flex;
+    justify-content: center;
+  }
+}

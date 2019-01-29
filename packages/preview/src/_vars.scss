@@ -1,0 +1,63 @@
+// media
+$mediaMobile: "screen and (max-width: 768px)";
+$mediaTablet: "screen and (max-width: 1024px)";
+$mediaDesktopSmall: "screen and (max-width: 1366px)";
+$fontFamily: "proxima-nova",
+sans-serif;
+// basic
+$bg: #FBFBFD;
+$bgDark: #252529;
+$borderColor: #EAEDF3;
+$borderColorDarker: #D8DCE6;
+$borderDefault: 1px solid $borderColor;
+$borderColorDark: #2E2E33;
+// text
+$textMain: #3E3F42;
+$textBase: #6B6C6F;
+$textSecondary: #9EA0A5;
+$textLight: #CECFD2;
+// colors
+$green: #38B249;
+$blue: #1665D8;
+$orange: #F6AB2F;
+$violet: #6977FF;
+$red: #E6492D;
+$yellow: #FACF55;
+$success: $green;
+$primary: #21e0ac;
+$warning: $orange;
+$error: $red;
+// base color pairs
+$colorPairs: (green, #21e0ac),
+(blue, #1665D8),
+(orange, #F6AB2F),
+(violet, #6977FF),
+(yellow, #FACF55),
+(red, #E6492D);
+// mixins
+@mixin generateColorVariants($class, $property, $alpha) {
+  @each $name,
+  $color in (green, #21e0ac),
+  (blue, #1665D8),
+  (orange, #F6AB2F),
+  (violet, #6977FF),
+  (red, #E6492D) {
+    #{$class}.#{$name} {
+      #{$property}: rgba($color, $alpha);
+    }
+  }
+}
+
+@mixin textOverflow {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin backgroundCover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+// others
+$boxShadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);

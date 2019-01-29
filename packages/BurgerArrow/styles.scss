@@ -1,0 +1,64 @@
+@import '~@css-burgers/burger/styles.scss';
+.burger.burger-arrow {
+  .burger-lines {
+    &,
+    &:after,
+    &:before {
+      transition: .2s top, .2s left, .2s transform, .4s background-color .2s;
+    }
+    &:after,
+    &:before {
+      width: 2em;
+    }
+  }
+  .burger-lines:after {
+    left: 0;
+    top: -1em;
+  }
+  .burger-lines:before {
+    left: 1em;
+    top: 1em;
+  }
+  &.open.burger-bottom {
+    transform: rotate(-90deg);
+  }
+  &.open.burger-top {
+    transform: rotate(90deg);
+  }
+  &.burger-right {
+    transform: rotateY(180deg);
+    .burger-lines:after {
+      left: 1em;
+      top: -1em;
+    }
+    .burger-lines:before {
+      left: 0em;
+      top: 1em;
+    }
+  }
+  &.open {
+    .burger-lines {
+      &,
+      &:after,
+      &:before {
+        transition: .2s background-color, .2s top, .2s left, .2s transform;
+      }
+      & {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      &:before,
+      &:after {
+        left: -.3em;
+        top: 0px;
+      }
+      &:before {
+        top: -.62em;
+        transform: rotate(-45deg);
+      }
+      &:after {
+        top: .62em;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
