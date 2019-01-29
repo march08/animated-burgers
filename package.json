@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d packages/preview/build",
     "clean-dist": "rimraf ./dist",
     "dist": "yarn clean-dist; NODE_ENV=production ./node_modules/.bin/webpack --config ./packages/dist.babel.js"
   },
@@ -24,6 +25,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gh-pages": "^2.0.1",
     "lerna": "^3.10.7",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
