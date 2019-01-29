@@ -104,6 +104,9 @@ const App = () => (
         ))
       }
     </BContainer>
+    <Content>
+        Ok
+    </Content>
   </div>
 )
 
