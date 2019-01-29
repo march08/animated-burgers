@@ -87,6 +87,15 @@ const App = () => (
       <Content>
         <h1>Animated CSS burger components</h1>
         <p>Available as plain html/css or as React components.</p>
+        <br />
+        <a
+          aria-label="Star ntkme/github-buttons on GitHub"
+          className="github-button"
+          data-icon="octicon-star"
+          href="https://github.com/ntkme/github-buttons"
+        >
+          Star
+        </a>
       </Content>
     </Section>
     <BContainer>
