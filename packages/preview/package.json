@@ -1,6 +1,6 @@
 {
   "name": "@animated-burgers/preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@animated-burgers/burger": "^0.1.0",
