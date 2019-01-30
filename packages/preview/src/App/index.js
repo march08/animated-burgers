@@ -263,7 +263,7 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
         </Code>
 
         <h3>Changing size</h3>
-        <p>The size is scaling based on the font-size. The dimensions of the lines are set by em values. The baseline is set to 16px.</p>
+        <p>The size is scaling based on the font-size. The dimensions of the lines are set by em values. The baseline is set to 12px.</p>
 
         <Code className="html">
           {`<!-- smaller -->
@@ -278,7 +278,7 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
 
 
 <!-- larger -->
-<div class="burger burger-squeeze" style="font-size: 24px">
+<div class="burger burger-squeeze" style="font-size: 18px">
   <div class="burger-lines"></div>
 </div>`}
         </Code>
@@ -300,7 +300,7 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
           <br />
           <div
             className="burger burger-squeeze"
-            style={ { fontSize: '24px' } }
+            style={ { fontSize: '18px' } }
           >
             <div className="burger-lines" />
           </div>
