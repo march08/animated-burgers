@@ -95,7 +95,16 @@ or as
           {' '}
           <a href="#react">React</a>
           {' '}
-components.
+components. This burger component is part of the
+          {' '}
+          <a
+            href="http://preview.janlosert.com?from=animated_burgers"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+Dashboard UI Kit 3.0
+          </a>
+          {'.'}
         </p>
         <br />
         <a
