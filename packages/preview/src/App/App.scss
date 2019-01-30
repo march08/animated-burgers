@@ -35,17 +35,7 @@
   display: none;
 }
 
-.app {
-  height: 100%;
-  overflow: auto;
-  /*padding-top: 100px;*/
-}
-
-body.noscroll {
-  .app {
-    overflow: hidden;
-  }
-}
+.app {}
 
 *,
 ::after,
@@ -69,7 +59,6 @@ body {
   background: $bg;
   color: $textBase;
   font-size: 16px;
-  overflow: hidden;
   font-weight: 400; // font smoothing
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
