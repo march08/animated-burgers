@@ -5,6 +5,7 @@
   font-size: 12px;
   cursor: pointer;
   transition: .2s all;
+  -webkit-tap-highlight-color: transparent;
   &:after {
     content: '';
     display: block;
