@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/animated-burgers/static/js/runtime~main.7c6e612f.js"
   },
   {
-    "revision": "f83f4fb31625cd778740",
-    "url": "/animated-burgers/static/js/main.f83f4fb3.chunk.js"
+    "revision": "6a35d0a382ee827f7aba",
+    "url": "/animated-burgers/static/js/main.6a35d0a3.chunk.js"
   },
   {
     "revision": "2ee560e3e59abff8920e",
     "url": "/animated-burgers/static/js/1.2ee560e3.chunk.js"
   },
   {
-    "revision": "f83f4fb31625cd778740",
-    "url": "/animated-burgers/static/css/main.d4b25546.chunk.css"
+    "revision": "6a35d0a382ee827f7aba",
+    "url": "/animated-burgers/static/css/main.03b3080c.chunk.css"
   },
   {
-    "revision": "63f6f6655cfb4d309e0f6fd24dbe5da2",
+    "revision": "5b5a21465aed229e1f9876d8e69ba51d",
     "url": "/animated-burgers/index.html"
   }
 ];
