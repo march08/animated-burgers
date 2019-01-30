@@ -184,7 +184,7 @@ repository
           <li>burger-rotate</li>
           <li>burger-slide</li>
           <li>burger-slip</li>
-          <li>burger-squeez</li>
+          <li>burger-squeeze</li>
         </ul>
       </Content>
     </Section>
@@ -240,7 +240,7 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
           <li>@animated-burgers/burger-rotate</li>
           <li>@animated-burgers/burger-slide</li>
           <li>@animated-burgers/burger-slip</li>
-          <li>@animated-burgers/burger-squeez</li>
+          <li>@animated-burgers/burger-squeeze</li>
         </ul>
       </Content>
     </Section>
