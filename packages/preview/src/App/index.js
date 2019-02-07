@@ -259,7 +259,14 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
     <Section style={ { borderTop: '1px solid #eee' } }>
       <Content>
         <h2>Styling the burger</h2>
-        <p>You can change the properties of the burger by overriding a class or adding a class. Here are some tricks you can use with these burgers. If you want to modify different properties, you can always check the source SCSS files.</p>
+        <p>You can change the properties of the burger by overriding a class or adding a class. Here are some tricks you can use with these burgers. If you want to modify different properties, you can always check the source SCSS files. You can find them in the repository:</p>
+
+        <Code className="javascript">
+          {`// base styling
+packages/Burger/styles.scss
+// + custom styling
+packages/{burger-style}/styles.scss`}
+        </Code>
 
         <h3>
           Changing Colour
