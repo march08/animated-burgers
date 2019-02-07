@@ -1,4 +1,4 @@
-@import '~@animated-burgers/burger/styles.scss';
+
 @keyframes burgerAnimationSlide {
   0% {
     transform: translateX(0);
@@ -35,14 +35,6 @@
       width: 2em;
       transition: .1s all .15s;
     }
-  }
-  .burger-lines:after {
-    left: 0;
-    top: -1em;
-  }
-  .burger-lines:before {
-    left: 1em;
-    top: 1em;
   }
   &:not(.open) {
     animation-name: burgerAnimationSlide;

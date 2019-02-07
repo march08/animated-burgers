@@ -4,6 +4,9 @@ import * as React from 'react'
 import BContainer from 'components/BContainer'
 import BContainerItem from 'components/BContainerItem'
 
+
+import '@animated-burgers/burger/styles.scss'
+
 import BurgerSqueeze from '@animated-burgers/burger-squeeze'
 import '@animated-burgers/burger-squeeze/styles.scss'
 

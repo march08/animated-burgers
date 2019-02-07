@@ -1,4 +1,4 @@
-@import '~@animated-burgers/burger/styles.scss';
+
 .burger.burger-rotate {
   .burger-lines {
     &:after,
@@ -11,14 +11,7 @@
       transition: all .2s;
     }
   }
-  .burger-lines:after {
-    left: 0;
-    top: -1em;
-  }
-  .burger-lines:before {
-    left: 1em;
-    top: 1em;
-  }
+  
   &.open {
     transform: rotate(180deg);
     .burger-lines {

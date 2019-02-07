@@ -1,4 +1,4 @@
 import './styles.scss'
-import { createBurger } from '@animated-burgers/Burger'
+import { createBurger } from '@animated-burgers/burger'
 
 export default createBurger('burger-slip')

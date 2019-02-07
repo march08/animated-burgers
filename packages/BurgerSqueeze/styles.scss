@@ -1,4 +1,4 @@
-@import '~@animated-burgers/burger/styles.scss';
+
 .burger.burger-squeeze {
   .burger-lines {
     &,
@@ -11,14 +11,7 @@
       width: 2em;
     }
   }
-  .burger-lines:after {
-    left: 0;
-    top: -1em;
-  }
-  .burger-lines:before {
-    left: 1em;
-    top: 1em;
-  }
+  
   &.open {
     .burger-lines {
       &,

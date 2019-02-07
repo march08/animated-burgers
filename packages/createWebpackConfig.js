@@ -1,6 +1,5 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals') // eslint-disable-line
-const CompressionWebpackPlugin = require('compression-webpack-plugin') // eslint-disable-line
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin // eslint-disable-line
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') // eslint-disable-line
 const autoprefixer = require('autoprefixer') // eslint-disable-line
@@ -64,10 +63,10 @@ const createWebpackConfig = ({
         loader: 'babel-loader',
         options: {
           presets: [
-            "@babel/preset-env",
-            "@babel/preset-react"
+            '@babel/preset-env',
+            '@babel/preset-react',
           ],
-        }
+        },
       },
       {
         test: /.(s)css$/,
@@ -85,12 +84,6 @@ const createWebpackConfig = ({
   },
   plugins: [
     extractScss,
-    new CompressionWebpackPlugin({
-      include: [
-        /\/*.css/,
-        /\/*.js/,
-      ],
-    }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.optimize\.css$/g,
         cssProcessor: require('cssnano'), // eslint-disable-line
