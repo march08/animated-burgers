@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/animated-burgers/static/css/1.fa08be1c.chunk.css"
   },
   {
-    "revision": "68b7a57fa34038abfa9127573edf5c71",
+    "revision": "a31ca672e31332549e0072af27bc985e",
     "url": "/animated-burgers/index.html"
   }
 ];
