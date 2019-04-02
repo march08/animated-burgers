@@ -39,7 +39,6 @@ module.exports = {
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
-    'array-element-newline': ['error', 'always'],
     'react/require-default-props': 1,
     'max-len': ['error', 110],
     'flowtype/require-valid-file-annotation': [0, "never"],

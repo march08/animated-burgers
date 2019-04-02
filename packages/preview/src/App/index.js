@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // @flow
 
 import * as React from 'react'
@@ -87,7 +88,7 @@ const burgers = [
 const App = () => (
   <div className="app">
     <Section className="hero">
-      <Content>
+      <Content style={ { maxWidth: 650 } }>
         <h1>Animated CSS burger components</h1>
         <p>
 Available as plain
@@ -116,8 +117,34 @@ Dashboard UI Kit 3.0
           data-icon="octicon-star"
           href="https://github.com/march08/animated-burgers"
         >
-          Star
+          650+ Stars
         </a>
+        <br />
+        <br />
+        <br />
+        <p>
+          <i>
+            {'Thank you for your support! If you want to follow my work, you can read my articles on '}
+            <a
+              href="https://medium.com/@march08"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+medium
+
+            </a>
+            {' or check my daily '}
+            <a
+              href="https://instagram.com/nroman_codes"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+image stories
+
+            </a>
+            .
+          </i>
+        </p>
       </Content>
     </Section>
     <BContainer>
