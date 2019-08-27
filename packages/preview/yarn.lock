@@ -2,45 +2,45 @@
 # yarn lockfile v1
 
 
-"@animated-burgers/burger-arrow@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger-arrow/-/burger-arrow-1.1.1.tgz#3713179d5782b7bf3c371e0940899fca8fc0e0a6"
-  integrity sha512-gydYr3Z2VC1TWJJrNcaIHwsSUtryvGmBZ2DVqW6Cy/V6Y7hBLjx/5YleA1axNwWIL81hwTS5qcgfe7iXnu1Cpw==
+"@animated-burgers/burger-arrow@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger-arrow/-/burger-arrow-1.1.2.tgz#6f232878b30f1514863e39d8e2e89069948ca345"
+  integrity sha512-6cIN1Ph1gutDKj4Sh+J/izRBP1i9yGcEcmFKdTVzAOAV4yFnAwcvPrM6W/T7NhpfwHPTIANKObRgTQO5qwWllw==
   dependencies:
-    "@animated-burgers/burger" "^1.1.0"
+    "@animated-burgers/burger" "^1.1.2"
 
-"@animated-burgers/burger-rotate@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger-rotate/-/burger-rotate-1.1.1.tgz#5a06bd82b9ffc66afa3ab95bbc61b086a01d2b3e"
-  integrity sha512-hZ4GQDKBGd4qH6AMVu5gWVZj6IvUxCh+vPisv97KUk7JGcEFWyAQCZ7JEXS1+oJgTLeHXfUHNKFAhotQFLvqvg==
+"@animated-burgers/burger-rotate@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger-rotate/-/burger-rotate-1.1.2.tgz#2e21c830d63e6a0d7a2351fa7ec8a9e0dd964430"
+  integrity sha512-VNTIzf/eapZ3PVyLKq75JKBt9zPC44EbIhYrysOXWwcptTKT8MAotxjv9ejbvJk/pcorJe/Ru0x5k/4LWRpWkQ==
   dependencies:
-    "@animated-burgers/burger" "^1.1.0"
+    "@animated-burgers/burger" "^1.1.2"
 
-"@animated-burgers/burger-slide@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger-slide/-/burger-slide-1.1.1.tgz#54f58d9c491463d20cc13cc19c712ec6044593cf"
-  integrity sha512-AqN45zjoRx4kGiLT7YaVlMv7L4t/zH/YVpGMjotLGsJ6RzAzl7ppYWK3Q/nmEcBM2qZp+7Cmgg0vK2J08JwHVw==
+"@animated-burgers/burger-slide@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger-slide/-/burger-slide-1.1.2.tgz#9a1ecbe646ae40da1cfd72a75e4f623093d817a7"
+  integrity sha512-Q8ZVuLyvqd+6H9auAzaLTXo2w5JbMSln4kqhv0mYBxlqC11IrbAzkPJsI9pTEDarn1L/r+j+5b0cBtyFXdpN7g==
   dependencies:
-    "@animated-burgers/burger" "^1.1.0"
+    "@animated-burgers/burger" "^1.1.2"
 
-"@animated-burgers/burger-slip@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger-slip/-/burger-slip-1.1.1.tgz#5b505069fd1d5eb2fdd016aac787dcd6a90e10ba"
-  integrity sha512-vQJnj0/obuRIuddKYcGq+TBS1gQp5VcsMphNS1GI8AWgfl8qscDZ0APIqHHsmc2o10gq2iw4I6GOMq1SdMqd+w==
+"@animated-burgers/burger-slip@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger-slip/-/burger-slip-1.1.2.tgz#4a16a4744a7f39f65886707094f70ce646d7a140"
+  integrity sha512-gm63/GrqHOv/wMYECx+Sag3uYm/STFaaAMaRGOFzxFYoHV+TZERVrj4RYUE9YIdsagxdEj18KVmCwXO7WHoG2w==
   dependencies:
-    "@animated-burgers/burger" "^1.1.0"
+    "@animated-burgers/burger" "^1.1.2"
 
-"@animated-burgers/burger-squeeze@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger-squeeze/-/burger-squeeze-1.1.1.tgz#031ad963b826824d0ac580d00ddd8b69a7fc4a50"
-  integrity sha512-KiHfAgmbV1z5wAl47uk7P/24IKJZl4emOxYNHhEwQCllcjQQg3U7r7HNEH18g7F0gNmdkSVHOf2KEBfVVpdAOQ==
+"@animated-burgers/burger-squeeze@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger-squeeze/-/burger-squeeze-1.1.2.tgz#98606c634d37e09ae8ffd4b6e38218878d0c7d4d"
+  integrity sha512-icB2y3yIeOYwbh0GOKQkMwwhvLd28SAr8dKctI/izLtBz+GMHq71YV2q0iYXZMFrS5/QytZx8k/33B7PFQIkzw==
   dependencies:
-    "@animated-burgers/burger" "^1.1.0"
+    "@animated-burgers/burger" "^1.1.2"
 
-"@animated-burgers/burger@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@animated-burgers/burger/-/burger-1.1.0.tgz#56f2648d019f4ccb7d702e4e43c73851dc1948ff"
-  integrity sha512-Udm2Owo1WgIwQuUlgmeInu8vdZEOoDGNg2lUHX1NZGPTnTIrbUCjkxAdMZBZGYMfOyliVHUcpkbNBw0pl6nSqg==
+"@animated-burgers/burger@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@animated-burgers/burger/-/burger-1.1.2.tgz#a75f7147f9d4041b8bfd510e0097a1500c4fa009"
+  integrity sha512-hErU9dlOcEeYbmbhhngBMXSDtqOaXfFEnKoodfs6vCFWD8dVLMNVbFFpZ0eV7/Wa9kKTGLPeLtDeP0vWYAcY7w==
 
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.0.0-beta.35":
   version "7.0.0"
@@ -3433,14 +3433,16 @@ eslint-scope@^4.0.0:
     estraverse "^4.1.1"
 
 eslint-utils@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.3.1.tgz#9a851ba89ee7c460346f97cf8939c7298827e512"
-  integrity sha512-Z7YjnIldX+2XMcjr7ZkgEsOj/bREONV60qYeB/bjMAqqqZ4zxKyWX+BOUkdmRmA9riiIPVvo5x86m5elviOk0Q==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
+  integrity sha512-eAZS2sEUMlIeCjBeubdj45dmBHQwPHWyBcT1VSYB7o9x9WRRqKxyUoiXlRjyAwzN7YEzHJlYg0NmzDRWx6GP4Q==
+  dependencies:
+    eslint-visitor-keys "^1.0.0"
 
 eslint-visitor-keys@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
-  integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
+  integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
 eslint@5.6.0:
   version "5.6.0"
