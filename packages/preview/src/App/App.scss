@@ -1,3 +1,5 @@
+@import "@animated-burgers/burger-slip/styles.scss";
+
 @import "../vars.scss";
 @import "./normalize.css";
 ::-webkit-scrollbar-button {
@@ -34,8 +36,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
-.app {}
 
 *,
 ::after,
@@ -88,25 +88,25 @@ body {
     font-weight: 600;
     color: $textMain;
   }
-  *+p {
+  * + p {
     margin-top: 0.7em;
   }
-  *+h1,
-  *+h2,
-  *+h3,
-  *+h4,
-  *+h5 {
+  * + h1,
+  * + h2,
+  * + h3,
+  * + h4,
+  * + h5 {
     margin-top: 1.725rem;
   }
-  h1+*,
-  h2+*,
-  h3+*,
-  h4+* {
+  h1 + *,
+  h2 + *,
+  h3 + *,
+  h4 + * {
     margin-top: 1em;
   }
   input,
   textarea {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
   h1 {
     font-size: 2.25rem;
@@ -125,15 +125,15 @@ body {
   p,
   ul,
   ol {
-    &+* {
+    & + * {
       margin-top: 1.125em;
     }
   }
-  p+p {
+  p + p {
     margin-top: 0.4em;
   }
   a {
-    transition: .2s;
+    transition: 0.2s;
     text-decoration: none;
     cursor: pointer;
   }
@@ -174,12 +174,12 @@ body {
   }
   code:not([class]) {
     display: inline-block;
-    background: #FBFBFD;
-    border: 1px solid #DADEE7;
+    background: #fbfbfd;
+    border: 1px solid #dadee7;
     border-radius: 4px;
     font-weight: 500;
     font-size: 0.875rem;
-    color: #34AA44;
+    color: #34aa44;
     line-height: 1.375rem;
     padding: 4px 12px;
     font-family: $fontFamily;
@@ -212,8 +212,7 @@ form {
 }
 
 // some helpers and pregenerated color classes
-@each $name,
-$color in $colorPairs {
+@each $name, $color in $colorPairs {
   &:global(.color-#{$name}) {
     color: $color;
   }
@@ -225,7 +224,7 @@ $color in $colorPairs {
   top: auto !important;
   color: white;
   display: block;
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;

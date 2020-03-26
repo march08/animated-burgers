@@ -1,114 +1,105 @@
 /* eslint-disable max-len */
 // @flow
 
-import * as React from 'react'
-import BContainer from 'components/BContainer'
-import BContainerItem from 'components/BContainerItem'
+import * as React from "react";
+import BContainer from "components/BContainer";
+import BContainerItem from "components/BContainerItem";
 
+import BurgerSqueeze from "@animated-burgers/burger-squeeze";
+import "@animated-burgers/burger-squeeze/dist/styles.css";
 
-import '@animated-burgers/burger/styles.scss'
+import BurgerArrow from "@animated-burgers/burger-arrow";
+import "@animated-burgers/burger-arrow/dist/styles.css";
 
-import BurgerSqueeze from '@animated-burgers/burger-squeeze'
-import '@animated-burgers/burger-squeeze/styles.scss'
+import BurgerSlide from "@animated-burgers/burger-slide";
+import "@animated-burgers/burger-slide/dist/styles.css";
 
-import BurgerArrow from '@animated-burgers/burger-arrow'
-import '@animated-burgers/burger-arrow/styles.scss'
+import BurgerSlip from "@animated-burgers/burger-slip";
+import "@animated-burgers/burger-slip/dist/styles.css";
 
-import BurgerSlide from '@animated-burgers/burger-slide'
-import '@animated-burgers/burger-slide/styles.scss'
+import BurgerRotate from "@animated-burgers/burger-rotate";
+import "@animated-burgers/burger-rotate/dist/styles.css";
 
-import BurgerSlip from '@animated-burgers/burger-slip'
-import '@animated-burgers/burger-slip/styles.scss'
+import Content from "components/Content";
+import Section from "components/Section";
+import Code from "components/Code";
 
-import BurgerRotate from '@animated-burgers/burger-rotate'
-import '@animated-burgers/burger-rotate/styles.scss'
-
-import Content from 'components/Content'
-import Section from 'components/Section'
-import Code from 'components/Code'
-
-
-import './App.scss'
+import "./App.scss";
 
 const bgs = [
-  '#2c2c54',
-  '#474787',
-  '#34ace0',
-  '#33d9b2',
-  '#ffb142',
-  '#ff793f',
-  '#ff5252',
-  '#b33939',
-]
+  "#2c2c54",
+  "#474787",
+  "#34ace0",
+  "#33d9b2",
+  "#ffb142",
+  "#ff793f",
+  "#ff5252",
+  "#b33939"
+];
 
 const burgers = [
   {
     item: <BurgerSqueeze />,
-    title: 'Squeeze',
+    title: "Squeeze"
   },
   {
     item: <BurgerSlide />,
-    title: 'Slide',
+    title: "Slide"
   },
   {
     item: <BurgerSlip />,
-    title: 'Slip',
+    title: "Slip"
   },
   {
     item: <BurgerRotate />,
-    title: 'Rotate',
+    title: "Rotate"
   },
   {
     item: <BurgerArrow />,
-    title: 'Arrow',
+    title: "Arrow"
   },
   {
-    item: (<BurgerArrow
-      direction="right"
-    />),
-    title: 'Arrow Right',
+    item: <BurgerArrow direction="right" />,
+    title: "Arrow Right"
   },
   {
-    item: <BurgerArrow
-      direction="up"
-    />,
-    title: 'Arrow Up',
+    item: <BurgerArrow direction="up" />,
+    title: "Arrow Up"
   },
   {
-    item: <BurgerArrow
-      direction="down"
-    />,
-    title: 'Arrow Down',
-  },
+    item: <BurgerArrow direction="down" />,
+    title: "Arrow Down"
+  }
 ].map((burger, index) => ({
   ...burger,
-  bg: bgs[index],
-}))
+  bg: bgs[index]
+}));
 
 const App = () => (
   <div className="app">
     <Section className="hero">
-      <Content style={ { maxWidth: 650 } }>
+      <Content style={{ maxWidth: 650 }}>
         <h1>Animated CSS burger components</h1>
         <p>
-Available as plain
-          {' '}
-          <a href="#htmlcss">html/css</a>
-          {' '}
-or as
-          {' '}
-          <a href="#react">React</a>
-          {' '}
-components. This burger component is part of the
-          {' '}
+          Available as plain <a href="#htmlcss">html/css</a> or as{" "}
+          <a href="#react">React</a> components. This burger component is part
+          of the{" "}
           <a
-            href="http://preview.janlosert.com?from=animated_burgers"
+            href="https://developer.dashboard-ui.com/?from=animated_burgers"
             rel="noreferrer noopener"
             target="_blank"
           >
-Dashboard UI Kit 3.0
+            Dashboard UI Kit 3.0
           </a>
-          {'.'}
+          {" with Typescript support! "}
+          <a
+            href="https://github.com/march08/dashboard-ui-kit"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            (github)
+          </a>
+          {"."}
         </p>
         <br />
         <a
@@ -117,30 +108,30 @@ Dashboard UI Kit 3.0
           data-icon="octicon-star"
           href="https://github.com/march08/animated-burgers"
         >
-          650+ Stars
+          700+ Stars
         </a>
         <br />
         <br />
         <br />
         <p>
           <i>
-            {'Thank you for your support! If you want to follow my work, you can read my articles on '}
+            {
+              "Thank you for your support! If you want to follow my work, you can read my articles on "
+            }
             <a
               href="https://medium.com/@march08"
               rel="noopener noreferrer"
               target="_blank"
             >
-medium
-
+              medium
             </a>
-            {' or check my daily '}
+            {" or check my daily "}
             <a
               href="https://instagram.com/nroman_codes"
               rel="noopener noreferrer"
               target="_blank"
             >
-image stories
-
+              image stories
             </a>
             .
           </i>
@@ -148,47 +139,47 @@ image stories
       </Content>
     </Section>
     <BContainer>
-      {
-        burgers.map(({ title, bg, item }) => (
-          <BContainerItem
-            key={ title }
-            style={ {
-              backgroundColor: bg,
-            } }
-          >
-            {item}
-            <span className="item-title">{title}</span>
-          </BContainerItem>
-        ))
-      }
+      {burgers.map(({ title, bg, item }) => (
+        <BContainerItem
+          key={title}
+          style={{
+            backgroundColor: bg
+          }}
+        >
+          {item}
+          <span className="item-title">{title}</span>
+        </BContainerItem>
+      ))}
     </BContainer>
     <Section id="htmlcss">
       <Content>
         <h2>Using HTML/CSS</h2>
-        <p>
-          The usage with HTML is super straightforward with few steps.
-        </p>
+        <p>The usage with HTML is super straightforward with few steps.</p>
         <h3>Getting the CSS</h3>
-        <p>To keep the CSS lightweight, you should import only what you need!</p>
         <p>
-          {' '}
-You will find a corresponding style in the
-          {' '}
+          To keep the CSS lightweight, you should import only what you need!
+        </p>
+        <p>
+          {" "}
+          You will find a corresponding style in the{" "}
           <a
             href="https://github.com/march08/animated-burgers"
             rel="noreferrer noopener"
             target="_blank"
           >
-repository
-
+            repository
           </a>
-, follow the path
-          {' '}
+          , follow the path{" "}
           <code>./packages/__YourBurgerStyle__/dist/styles.css</code>
         </p>
-        <p>Download the file and link it to your html or copy it to your main file.</p>
+        <p>
+          Download the file and link it to your html or copy it to your main
+          file.
+        </p>
         <h3>HTML markup</h3>
-        <p>The html is super simple, this is an example using an arrow animation:</p>
+        <p>
+          The html is super simple, this is an example using an arrow animation:
+        </p>
 
         <Code className="html">
           {`<div class="burger burger-arrow">
@@ -203,7 +194,8 @@ repository
 </div>`}
         </Code>
         <p>
-          If some animations require direction, such as arrow, you can simply add a class that will handle a direction, such as:
+          If some animations require direction, such as arrow, you can simply
+          add a class that will handle a direction, such as:
         </p>
         <Code className="html">
           {`<div class="burger burger-arrow burger-right">
@@ -229,12 +221,13 @@ repository
     </Section>
     <Section
       id="react"
-      style={ { backgroundColor: 'white', borderTop: '1px solid #eee' } }
+      style={{ backgroundColor: "white", borderTop: "1px solid #eee" }}
     >
       <Content>
         <h2>Using burgers in your React app</h2>
         <p>
-          Each burger style is published as npm package separately, that means you are importing only what is necessary.
+          Each burger style is published as npm package separately, that means
+          you are importing only what is necessary.
         </p>
         <h3>Include burger in your project</h3>
 
@@ -283,10 +276,15 @@ import '@animated-burgers/{burger-style}/dist/styles.css'
         </ul>
       </Content>
     </Section>
-    <Section style={ { borderTop: '1px solid #eee' } }>
+    <Section style={{ borderTop: "1px solid #eee" }}>
       <Content>
         <h2>Styling the burger</h2>
-        <p>You can change the properties of the burger by overriding a class or adding a class. Here are some tricks you can use with these burgers. If you want to modify different properties, you can always check the source SCSS files. You can find them in the repository:</p>
+        <p>
+          You can change the properties of the burger by overriding a class or
+          adding a class. Here are some tricks you can use with these burgers.
+          If you want to modify different properties, you can always check the
+          source SCSS files. You can find them in the repository:
+        </p>
 
         <Code className="javascript">
           {`// base styling
@@ -295,12 +293,16 @@ packages/Burger/styles.scss
 packages/{burger-style}/styles.scss`}
         </Code>
 
-        <h3>
-          Changing Colour
-        </h3>
+        <h3>Changing Colour</h3>
         <p>
-          To change the color of the burger, add few lines in your css.
+          You can change the properties of the burger by overriding a class or
+          adding a class. Here are some tricks you can use with these burgers.
+          If you want to modify different properties, you can always check the
+          source SCSS files.
         </p>
+
+        <h3>Changing Colour</h3>
+        <p>To change the color of the burger, add few lines in your css.</p>
 
         <Code className="css">
           {`.burger .burger-lines,
@@ -309,7 +311,10 @@ packages/{burger-style}/styles.scss`}
         </Code>
 
         <h3>Changing size</h3>
-        <p>The size is scaling based on the font-size. The dimensions of the lines are set by em values. The baseline is set to 12px.</p>
+        <p>
+          The size is scaling based on the font-size. The dimensions of the
+          lines are set by em values. The baseline is set to 12px.
+        </p>
 
         <Code className="html">
           {`<!-- smaller -->
@@ -329,33 +334,24 @@ packages/{burger-style}/styles.scss`}
 </div>`}
         </Code>
         <p>results into</p>
-        <div style={ { background: 'black', padding: '40px' } }>
-
-          <div
-            className="burger burger-squeeze"
-            style={ { fontSize: '8px' } }
-          >
+        <div style={{ background: "black", padding: "40px" }}>
+          <div className="burger burger-squeeze" style={{ fontSize: "8px" }}>
             <div className="burger-lines" />
           </div>
           <br />
-          <div
-            className="burger burger-squeeze"
-          >
+          <div className="burger burger-squeeze">
             <div className="burger-lines" />
           </div>
           <br />
-          <div
-            className="burger burger-squeeze"
-            style={ { fontSize: '18px' } }
-          >
+          <div className="burger burger-squeeze" style={{ fontSize: "18px" }}>
             <div className="burger-lines" />
           </div>
         </div>
       </Content>
     </Section>
   </div>
-)
+);
 
-App.defaultProps = {}
+App.defaultProps = {};
 
-export default App
+export default App;

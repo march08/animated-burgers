@@ -8,9 +8,6 @@
     "@animated-burgers/burger-slide": "^1.1.2",
     "@animated-burgers/burger-slip": "^1.1.2",
     "@animated-burgers/burger-squeeze": "^1.1.2",
-    "gh-pages": "^2.0.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
     "react-scripts": "2.1.3",
     "react-snap": "^1.23.0"
   },
