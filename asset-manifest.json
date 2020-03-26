@@ -1,15 +1,13 @@
 {
-  "main.css": "/animated-burgers/static/css/main.3e5f0ac8.chunk.css",
-  "main.js": "/animated-burgers/static/js/main.88c23dbb.chunk.js",
-  "main.js.map": "/animated-burgers/static/js/main.88c23dbb.chunk.js.map",
-  "static/css/1.0e081747.chunk.css": "/animated-burgers/static/css/1.0e081747.chunk.css",
-  "static/js/1.9d02e949.chunk.js": "/animated-burgers/static/js/1.9d02e949.chunk.js",
-  "static/js/1.9d02e949.chunk.js.map": "/animated-burgers/static/js/1.9d02e949.chunk.js.map",
+  "main.css": "/animated-burgers/static/css/main.bccb3b78.chunk.css",
+  "main.js": "/animated-burgers/static/js/main.2c0d1364.chunk.js",
+  "main.js.map": "/animated-burgers/static/js/main.2c0d1364.chunk.js.map",
+  "static/js/1.2c289ae4.chunk.js": "/animated-burgers/static/js/1.2c289ae4.chunk.js",
+  "static/js/1.2c289ae4.chunk.js.map": "/animated-burgers/static/js/1.2c289ae4.chunk.js.map",
   "runtime~main.js": "/animated-burgers/static/js/runtime~main.7c6e612f.js",
   "runtime~main.js.map": "/animated-burgers/static/js/runtime~main.7c6e612f.js.map",
-  "static/css/main.3e5f0ac8.chunk.css.map": "/animated-burgers/static/css/main.3e5f0ac8.chunk.css.map",
-  "static/css/1.0e081747.chunk.css.map": "/animated-burgers/static/css/1.0e081747.chunk.css.map",
+  "static/css/main.bccb3b78.chunk.css.map": "/animated-burgers/static/css/main.bccb3b78.chunk.css.map",
   "index.html": "/animated-burgers/index.html",
-  "precache-manifest.a0e9d130a0623f256fd4b75c22a46fc5.js": "/animated-burgers/precache-manifest.a0e9d130a0623f256fd4b75c22a46fc5.js",
+  "precache-manifest.672dd8bd8f0d28664a04a258c4e4e444.js": "/animated-burgers/precache-manifest.672dd8bd8f0d28664a04a258c4e4e444.js",
   "service-worker.js": "/animated-burgers/service-worker.js"
 }
