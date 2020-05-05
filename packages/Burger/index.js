@@ -5,6 +5,7 @@ import './styles.scss'
 
 const Burger = ({
   className,
+  barClassName,
   Component,
   isOpen,
   direction = null,
@@ -17,12 +18,15 @@ const Burger = ({
     }) }
     { ...rest }
   >
-    <div className="burger-lines" />
+    <div 
+      className={ classnames('burger-lines', barClassName) }
+    />
   </Component>
 )
 
 Burger.defaultProps = {
   className: null,
+  barClassName: null,
   Component: 'div',
   isOpen: false,
   direction: null,
