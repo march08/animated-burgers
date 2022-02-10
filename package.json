@@ -29,7 +29,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "gh-pages": "^2.0.1",
     "lerna": "^3.10.7",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "react-scripts": "^3.4.1",
